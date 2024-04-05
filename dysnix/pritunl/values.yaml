@@ -183,7 +183,7 @@ mongodbUriTemplate:
 conf:
   ## Specify host id which preserves settings for the POD in the database
   ##  (no settings a lost on reboot, ex. public_address)
-  host_id: ffd7a38db01042cf806760c211ff4a41
+  host_id: 66a47ed51483415e8afff62fa7807cc0
   log_path: /var/log/pritunl.log
   static_cache: true
   temp_path: /tmp/pritunl_%r

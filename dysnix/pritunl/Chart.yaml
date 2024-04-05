@@ -2,25 +2,19 @@ apiVersion: v2
 appVersion: "1.29"
 description: A Helm chart for Kubernetes
 name: pritunl
-version: 0.2.3
+version: 0.2.4
 home: https://pritunl.com/
 sources:
   - https://github.com/dysnix/charts
   - https://github.com/pritunl/pritunl
-
-maintainers:
-  - name: dennybaa
-    email: dennybaa@gmail.com
-  - name: vladstarr
-    email: vladstarrr@icloud.com
 
 dependencies:
   - name: common
     repository: https://charts.bitnami.com/bitnami
     tags:
       - bitnami-common
-    version: 1.10.x
+    version: 2.x.x
   - name: mongodb
-    version: ~10.30.x
+    version: ~15.x.x
     repository: https://charts.bitnami.com/bitnami
     condition: mongodb.enabled
